@@ -1,5 +1,3 @@
-import os
-
 import chainlit as cl
 import dotenv
 from openai.types.responses import ResponseTextDeltaEvent
@@ -8,15 +6,6 @@ from agents import Runner, SQLiteSession
 from finance_agent import finance_agent
 
 dotenv.load_dotenv()
-
-# Authentication
-@cl.password_auth_callback
-def auth_callback(username: str, password: str):
-    if username == os.getenv("CHAINLIT_USERNAME", "ali") and password == os.getenv("CHAINLIT_PASSWORD", "usama"):
-        return cl.User(identifier=username)
-    else:
-        return None
-
 
 WELCOME = """Hi! I'm **FinBot**, your personal finance assistant.
 
