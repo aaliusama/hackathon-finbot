@@ -1,0 +1,13 @@
+[project]
+name = "hackathon-finbot"
+version = "1.0.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "openai-agents==0.7.0",
+    "litellm==1.81.14",
+    "boto3==1.42.54",
+    "chromadb==1.0.21",
+    "pysqlite3==0.6.0",
+    "chainlit==2.9.6",
+    "mcp[cli]==1.26.0",
+]

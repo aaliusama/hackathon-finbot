@@ -1,0 +1,36 @@
+[project]
+user_env = []
+session_timeout = 3600
+user_session_timeout = 1296000
+cache = false
+persist_user_env = false
+mask_user_env = false
+allow_origins = ["*"]
+
+[features]
+unsafe_allow_html = false
+latex = false
+user_message_autoscroll = true
+assistant_message_autoscroll = true
+
+[features.spontaneous_file_upload]
+    enabled = false
+
+[features.audio]
+    enabled = false
+    sample_rate = 24000
+
+[features.mcp]
+    enabled = false
+
+[features.mcp.streamable-http]
+    enabled = true
+
+[UI]
+name = "FinBot"
+cot = "full"
+confirm_new_chat = true
+alert_style = "classic"
+
+[meta]
+generated_by = "2.9.6"
