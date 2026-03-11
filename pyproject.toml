@@ -1,7 +1,7 @@
 [project]
 name = "hackathon-finbot"
 version = "1.0.0"
-requires-python = ">=3.13,<3.14"
+requires-python = ">=3.13,<3.15"
 dependencies = [
     "openai-agents==0.7.0",
     "litellm==1.81.14",
